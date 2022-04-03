@@ -12,11 +12,11 @@ def click(x,y):
 if __name__ == "__main__":
     print("\n----------Script Started----------")
     while keyboard.is_pressed('x') == False:
-        if pyautogui.locateOnScreen("E:\\VisualStudio\\Python\\Netflix-Skip-Intro\\skiprecap.png",confidence=0.8) != None:
-            click(1275,676)
+        if pyautogui.locateOnScreen("skiprecap.png",confidence=0.8) != None:
+            click(1275,676) #Will change according to your screen
             now = datetime.now()
             print("Skipped Recap at : ",now.strftime("%H:%M:%S"))
-        elif pyautogui.locateOnScreen("E:\\VisualStudio\\Python\\Netflix-Skip-Intro\\skipintro.png",confidence=0.8) != None:
+        elif pyautogui.locateOnScreen("skipintro.png",confidence=0.8) != None:
             click(1275,676)
             now = datetime.now()
             print("Skipped Intro at : ",now.strftime("%H:%M:%S"))
