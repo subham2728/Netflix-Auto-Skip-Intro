@@ -16,7 +16,7 @@ if __name__ == "__main__":
             click(1275,676)
             now = datetime.now()
             print("Skipped Recap at : ",now.strftime("%H:%M:%S"))
-        elif pyautogui.locateOnScreen("E:\\VisualStudio\\Python\\Netflix-Skip-Intro\\skipintro.png",confidence=0.5) != None:
+        elif pyautogui.locateOnScreen("E:\\VisualStudio\\Python\\Netflix-Skip-Intro\\skipintro.png",confidence=0.8) != None:
             click(1275,676)
             now = datetime.now()
             print("Skipped Intro at : ",now.strftime("%H:%M:%S"))
